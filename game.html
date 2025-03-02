@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garbage Code</title>
+  <!-- Link to our custom styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Highlight.js CSS (using a dark theme for a code-editor look) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">Home</a>
+    </div>
+    <div class="nav-right">
+      <a href="help.html">Help</a>
+      <a href="game.html">Play</a>
+      <a href="credit.html">Credits</a>
+    </div>
+  </nav>
+
+  <div id="game-container">
+    <!-- Scoreboard container -->
+    <div id="scoreBoard">
+      <span id="correctCounter">Questions Right: 0</span>
+      <span id="wrongCounter">Questions Wrong: 0</span>
+    </div>
+    <h1 id="questionText"></h1>
+    <div id="snippetContainer">
+      <!-- Each button now contains a formatted code block -->
+      <button class="snippetButton"></button>
+      <button class="snippetButton"></button>
+      <button class="snippetButton"></button>
+    </div>
+    <p id="resultText"></p>
+    <!-- Skip Button -->
+    <button id="skipButton">Skip</button>
+  </div>
+
+  <!-- Include Highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>
+    // In case any code is dynamically inserted, highlight all code blocks.
+    hljs.highlightAll();
+  </script>
+  <!-- Link to our custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
